@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>Regist Member</servlet-name>
+		<servlet-class>kr.ac.NT.csp.registMemberServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Regist Member</servlet-name>
+		<url-pattern>/registMember</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Retrieve Member</servlet-name>
+		<servlet-class>kr.ac.NT.csp.RetrieveMemberServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Retrieve Member</servlet-name>
+		<url-pattern>/retrieve</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Read Member</servlet-name>
+		<servlet-class>kr.ac.NT.csp.ReadMemberServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Read Member</servlet-name>
+		<url-pattern>/ReadMember</url-pattern>
+	</servlet-mapping>
+		
+	<servlet>
+		<servlet-name>Delete Member</servlet-name>
+		<servlet-class>kr.ac.NT.csp.DeleteMemberServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Delete Member</servlet-name>
+		<url-pattern>/Delete</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>SignUp</servlet-name>
+		<servlet-class>kr.ac.NT.csp.SignUpServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SignUp</servlet-name>
+		<url-pattern>/signup</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>kr.ac.NT.csp.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>login.html</welcome-file>
+	</welcome-file-list>
+</web-app>
